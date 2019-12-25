@@ -1,0 +1,27 @@
+######  open
+
+rdi ==> pionter to string containing file path
+rsi ==> mode 0x0 means read only
+
+
+###### read 
+
+rdi ==> file discriptor for open ----0x3
+rsi ==> pointer to a buffer where data read from file will be stored
+rdx ==> no of bytes to read
+
+
+##### gets
+
+rdi ==> pointer to a buffer where input from stdin will be stored
+
+##### puts
+
+rdi ==> pointer to a buffer you want to print
+
+
+##### write
+
+rdi ==> file discriptor 0x4 means stdout (i guess)
+rsi ==> buffer 
+rdx ==> no of bytes to read
